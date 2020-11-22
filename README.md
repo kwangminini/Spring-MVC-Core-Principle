@@ -83,6 +83,6 @@ DispatcherServlet 동작 순서 <br/>
 &nbsp;&nbsp;6. 핸들러의 리턴값을 보고 어떻게 처리할지 판단한다. <br/>
 - 뷰 름에 해당하는 뷰를 찾아서 모델 데이터를 렌더링
 - @ResponseEntity가 있다면 Converter를 사용해서 응답 본문을 만든다 <br/>
-&nbsp;&nbsp;7. 최종적으로 응답을 보낸다
+7. 최종적으로 응답을 보낸다
 
 
