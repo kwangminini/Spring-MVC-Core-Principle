@@ -148,5 +148,12 @@ public class WebConfig{
     handlerMapping.setOrder(Ordered.HIGHEST_PRECEDENCE);
     return handlerMapping;
   }
+  @Bean
+  public ViewResolver viewResolver(){
+    InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+    viewResolver.setPrefix("/WEB-INF/");
+    viewResolver.setSuffix(".JSP");
+    return viewResolver;
+  }
 }
 ```
