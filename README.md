@@ -96,4 +96,10 @@ LocaleResolver
 - 클라이언트의 치(Locale) 정보를 파악하는 인터페이스
 - 기본 전략은 요청의 accept-language를 보고 판단
 
+ThemeResolver
+- 애플리케이션에 설정된 테마를 파악하고 변경할 수 있는 인터페이스
+
+HandlerMapping
+- 요청을 처리할 핸들러를 찾는 인터페이스
+
 
