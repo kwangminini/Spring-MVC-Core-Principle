@@ -130,5 +130,5 @@ FlashMapManager
   - 스프링 부트 자동 설정이 자동으로 해줌
 - 스프링 부트의 주관에 따라 여러 인터페이스 구현체를 Bean으로 등록
 
-**결론 : 굉장히 복잡한 Servlet == DispatcherServlet **
+**결론 : 굉장히 복잡한 Servlet == DispatcherServlet**
 
