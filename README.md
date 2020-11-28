@@ -132,3 +132,21 @@ FlashMapManager
 
 **결론 : 굉장히 복잡한 Servlet == DispatcherServlet**
 
+----------------------
+## 2. 스프링 MVC 설정
+
+스프링 MVC 구성 요소 직접 Bean으로 등록하기
+- @Configuration을 사용한 자바 설정 파일에 직접 @Bean을 사용해서 등록
+
+```
+@Configuration
+@ComponentScan
+public class WebConfig{
+  @Bean
+  public HandlerMapping handlerMapping(){
+    RequestMappingHandlerMapping handlerMapping = new RequestMappingHandlerMapping();
+    handlerMapping.setOrder(Ordered.HIGHEST_PRECEDENCE);
+    return handlerMapping;
+  }
+}
+```
