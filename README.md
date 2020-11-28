@@ -83,6 +83,17 @@ DispatcherServlet 동작 순서 <br/>
 &nbsp;&nbsp;6. 핸들러의 리턴값을 보고 어떻게 처리할지 판단한다. <br/>
  - 뷰 름에 해당하는 뷰를 찾아서 모델 데이터를 렌더링
  - @ResponseEntity가 있다면 Converter를 사용해서 응답 본문을 만든다 <br/>
-7. 최종적으로 응답을 보낸다
+7. 최종적으로 응답을 보낸다<br/>
+
+DispatcherServlet의 기본 전략
+- DispatcherServlet.properties
+
+MultipartResolver
+- 파일 업로드 요청 처리에 필요한 인터페이스
+- HttpServletRequest를 MultipartHttpServletRequest로 변환해주어 요청이 담고 있는 File을 꺼낼 수 있는 API 제공
+
+LocaleResolver
+- 클라이언트의 치(Locale) 정보를 파악하는 인터페이스
+- 기본 전략은 요청의 accept-language를 보고 판단
 
 
