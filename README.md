@@ -157,3 +157,15 @@ public class WebConfig{
   }
 }
 ```
+
+@EnableWebMvc
+- annotation 기반 스프링 MVC를 사용할 때 편리한 웹 MVC 기본 설정
+```
+@Configuration
+@EnableWebMvc
+public class WebConfig{
+}
+```
+
+WebMvcConfigurer 인터페이스
+- @EnableWebMvc가 
