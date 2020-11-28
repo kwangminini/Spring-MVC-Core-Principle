@@ -171,6 +171,7 @@ WebMvcConfigurer 인터페이스
 - @EnableWebMvc가 제공하는 Bean을 커스터마이징할 수 있는 기능을 제공하는 인터페이스
 ```
 @Configuration
+@ComponentScan
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer{
   
