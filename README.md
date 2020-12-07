@@ -181,3 +181,7 @@ public class WebConfig implements WebMvcConfigurer{
   }
 }
 ```
+
+스프링 MVC 커스터마이징
+- @Configuration + Implements WebMvcConfigurer : 스프링 부트의 스프링 MVC 자동설정 + 추가 설정
+- @Configuration + @EnableWebMvc + Implements WebMvcConfigurer : 스프링 트의 스프링 MVC 자동설정 
